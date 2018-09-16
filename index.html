@@ -2,70 +2,87 @@
 <html> 
     <head>
         <title> Welcome to my page</title>
-        <style>
-            
-            
-        </style>
+<link rel="stylesheet" type="text/css" href="blogstyle.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>    
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>   
+
     </head>
     
     <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">About me</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="#">Projects <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#">Work experience</a>
-      <a class="nav-item nav-link" href="#">Linkedin</a>
-      <a class="nav-item nav-link disabled" href="#">Github</a>
+      <a class="nav-item nav-link" href="#"><a href="https://www.linkedin.com/in/camy-ngo/">Linkedin</a></a>
+      <a class="nav-item nav-link disabled" href="#"><a href="https://github.com/camyngo/porfollio1">Github</a></a>
     </div>
   </div>
 </nav>
-    <h> ABOUT ME</h>
-    <p><img src="me.jpg" alt="Me and my niece"> Hi my name is Camy, that is the picture of me and my niece</p>
-    <h1> I am currently majoring in Information System with a minor in Computer Science<br>
-    I am half vietnamese and half chinese, i was born and raisaed in Vietnam and then my family moved to Utah 5 years ago.<br></h1>
-    <h2> MY PROJECTS</h2>
-    <ul>
-    <li></li><a href="pokemontable.html"> Here is the pokemon project i have </a></li>
-    <li></li><a href="blog.html"> Here is the first blog that i created</a></li>
-    <li></li><a href="tictac.html"> My tictac table</a></li>
-    </ul>
 
-    <h3> My volunteer/working experience</h3>    
-    <ul>
+    <h1><center><font color="red">ABOUT ME</font></center></h1>
+    <img src="http://18.188.78.10/me.jpg" height="850"><br>
+    <img src="http://18.188.78.10/family.jpg" height="480">
+    <p><center><font color="blue"><b>Hi my name is Camy, that is the picture of me, my niece and my family</b></font></center></p>
+    <h1><font color="pink"size="6"> I am currently majoring in Information System with a minor in Computer Science.<br>
+    I am half vietnamese and half chinese, i was born and raisaed in Vietnam and then my family moved to Utah 5 years ago.<br></font></h1>
+    <h2><font color="red"size="15"><center><a href="#project">MY PROJECTS</a></center></font></h2>
+    <ul><font size="6"><center>
+    <li><a href="http://18.188.78.10/pokemontable.html"> Here is the pokemon project i have </a></li>
+    <li><a href="blog.html"> Here is the first blog that i created</a></li>
+    <li><a href="tictac.html"> My tictac table</a></li>
+    </font></center></ul>
+
+    <h3><center>My volunteer/working experience</center></h3>    
+    <ul><center>
         <li> Boys and Girls Club of Sugar House / Salt Lake City, UT 		 01/2016 – 03/2016<br>
         Volunteer at The Teen Center</li>
         <li> Waitress at Pho Saigon Noodle House </li>
         <li> Waitress at East West Connection</li>
         <li> Waitress at Pho Hoa</li>
-    </ul>
-    
-    <h4> Link to my Linkedin and Github</h4>
-    <a href="https://www.linkedin.com/in/camy-ngo/">Linkedin</a><br>
-    <a href="https://github.com/camyngo/porfollio1">Github - porfollio1</a> 
-      
-       
+    </center></ul>
+
+    <p>Please type your name in the box and click on it</p>
     <form>
         <input type="text" id="myform">
         <button onclick="myFunction(event)" > Click me</button>
-    </form>    
+    </form> 
     
-    <p id="demo"></p>
+     <p id="demo"></p>
     <script>
+    
         function myFunction(event)
         {
             document.getElementById("demo").innerHTML=
-            "HEllo"+document.getElementById("myform").value;
+            "Hello"+" "+document.getElementById("myform").value;
             event.preventDefault();
         }
-    </script>    
+    </script>
     
-    </body>
-</html> 
+<script>
+function setBorderWidth(width) {
+  document.getElementById("img1").style.borderWidth = width + "px";
+}
+</script>
+
+<p>
+  <img id="img1"
+       src="http://18.188.78.10/anime.jpg"
+       style="border: 5px solid green;"
+       width="100" height="100" alt="border test">
+</p>
+
+<form name="FormName">
+  <input type="button" value="Make border 10px-wide" onclick="setBorderWidth(10);" />
+  <input type="button" value="Make border 0px-wide"  onclick="setBorderWidth(0);" />
+</form>
+    
+
+    <script>
+document.write(Date());
+    </script>
+</body>
+</html>
