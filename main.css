@@ -1,0 +1,37 @@
+body{
+	border: 20px solid grey;
+	margin :20px auto;
+	max-width: 700px;
+	width: 80%;
+	padding: 20px;
+	font-family: Source Sans Pro;
+	background-color:grey;
+}
+
+h2{
+	color: yellow;
+	text-align: center;
+	font-size: 15px;
+	text-transform: capitalize;
+	
+}
+
+p{
+	color: blue;
+	text-align: center;
+	font-size: 15px;
+	text-transform: capitalize;
+	text-decoration: underline;
+}
+
+p2{
+	color: pink;
+	font-size: 18px;
+	
+}
+
+.project{
+	color: red;
+	text-align: center;
+	font-size: 15px;
+}
